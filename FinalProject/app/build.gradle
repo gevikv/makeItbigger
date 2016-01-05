@@ -28,6 +28,11 @@ android {
             resValue "string", "app_name1", "Build it Bigger Paid"
         }
     }
+    sourceSets {
+        free {
+            manifest.srcFile 'src/free/AndroidManifest.xml'
+        }
+    }
 }
 
 dependencies {
